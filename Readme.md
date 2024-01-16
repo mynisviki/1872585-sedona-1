@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Viktoria Kucherova](https://up.htmlacademy.ru/htmlcss-individual/1/user/1872585).
-* Наставник: `Артем Именин`.
+* Наставник: [Артем Именин](https://htmlacademy.ru/profile/id1691873).
 
 ---
 
