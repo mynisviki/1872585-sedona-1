@@ -35,7 +35,7 @@
           </li>
         </ul>
       </nav>
-      <button class="button button-header" type="button">Хочу сюда!</button>
+      <a class="button button-header" href="#">Хочу сюда!</a>
     </header>
 
     <main class="main-inner">
@@ -121,15 +121,15 @@
           <option value="popular">Сначала популярные</option>
         </select>
 
-        <a class="button button-cards" href="#">
+        <button class="button button-cards" type="button">
           <span class="visually-hidden">карточки</span>
-        </a>
-        <a class="button" href="#">
-          <span class="visually-hidden button-slideshow">слайдшоу</span>
-        </a>
-        <a class="button button-list" href="#">
+        </button>
+        <button class="button button-slideshow" type="button">
+          <span class="visually-hidden">слайдшоу</span>
+        </button>
+        <button class="button button-list" type="button">
           <span class="visually-hidden">список</span>
-        </a>
+        </button>
       </section>
 
       <ul class="hotel-list">
@@ -208,9 +208,7 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-    </main>
 
-    <footer class="page-footer ">
       <section class="newsletter">
         <div class="newsletter-header">
           <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
@@ -223,7 +221,9 @@
           <button class="button newsletter-button" type="submit">подписаться</button>
         </form>
       </section>
+    </main>
 
+    <footer class="page-footer ">
       <section class="footer-social">
         <h2 class="visually-hidden">Ссылки на соцсети</h2>
         <ul class="footer-social-list">
