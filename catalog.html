@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -40,7 +41,7 @@
     </header>
 
     <main class="main-inner">
-      <div class="inner-header-container">
+      <div class="inner-container">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
           <ul class="breadcrumbs">
@@ -49,7 +50,7 @@
                 <span class="visually-hidden"></span>
               </a>
             </li>
-            <li class="breadcrumbs-item">
+            <li class="breadcrumbs-item"> Гостиницы
               <a class="breadcrumbs-link">
                 <span class="visually-hidden"></span>
               </a>
@@ -112,28 +113,34 @@
                 </li>
               </ul>
             </fieldset>
-            <button class="button" type="submit">Применить</button>
-            <button class="button" type="reset">Сбросить</button>
-          </form>
 
-          <h2 class="hotel counter">Найдено гостиниц: 38</h2>
+            <span class="price-slider">
+              <a class="catalog-filter-title">Стоимость, ₽:</a>
+            </span>
+
+            <button class="button button-inner button-inner-submit" type="submit">Применить</button>
+            <button class="button button-inner button-inner-reset" type="reset">Сбросить</button>
+          </form>
+        </div>
+
+          <h2 class="hotel-counter">Найдено гостиниц: 38</h2>
           <select class="select-control" aria-label="Сортировка">
             <option value="cheap">Сначала дешевые</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="popular">Сначала популярные</option>
           </select>
 
-          <button class="button button-cards" type="button">
+          <button class="button button-display-options button-cards" type="button">
             <span class="visually-hidden">карточки</span>
           </button>
-          <button class="button button-slideshow" type="button">
+          <button class="button button-display-options button-slideshow" type="button">
             <span class="visually-hidden">слайдшоу</span>
           </button>
-          <button class="button button-list" type="button">
+          <button class="button button-display-options button-list" type="button">
             <span class="visually-hidden">список</span>
           </button>
         </section>
-      </div>
+
       <ul class="hotel-list">
         <li class="hotel-card">
           <a class="hotel-card-link" href="#">
@@ -146,7 +153,7 @@
           <a class="hotel-card-button brown-button" href="#">Подробнее</a>
           <a class="hotel-card-button light-blue-button" href="#">В избранное</a>
           <span class="visually-hidden">количество звезд</span>
-          <a class="hotel-card-button" href="#">Рейтинг: 8,5</a>
+          <a class="hotel-card-button light-grey-button" href="#">Рейтинг: 8,5</a>
         </li>
 
         <li class="hotel-card">
@@ -160,7 +167,7 @@
           <a class="hotel-card-button brown-button" href="#">Подробнее</a>
           <a class="hotel-card-button green-button" href="#">В избранное</a>
           <span class="visually-hidden">количество звезд</span>
-          <a class="hotel-card-button" href="#">Рейтинг: 9,2</a>
+          <a class="hotel-card-button light-grey-button" href="#">Рейтинг: 9,2</a>
         </li>
 
         <li class="hotel-card">
@@ -174,7 +181,7 @@
           <a class="hotel-card-button brown-button" href="#">Подробнее</a>
           <a class="hotel-card-button light-blue-button" href="#">В избранное</a>
           <span class="visually-hidden">количество звезд</span>
-          <a class="hotel-card-button" href="#">Рейтинг: 6,9</a>
+          <a class="hotel-card-button light-grey-button" href="#">Рейтинг: 6,9</a>
         </li>
 
         <li class="hotel-card">
@@ -188,7 +195,7 @@
           <a class="hotel-card-button brown-button" href="#">Подробнее</a>
           <a class="hotel-card-button light-blue-button" href="#">В избранное</a>
           <span class="visually-hidden">количество звезд</span>
-          <a class="hotel-card-button" href="#">Рейтинг: 5,0</a>
+          <a class="hotel-card-button light-grey-button" href="#">Рейтинг: 5,0</a>
         </li>
       </ul>
 
@@ -196,7 +203,7 @@
 
       <ul class="pagination">
         <li class="pagination-item">
-          <a class="pagination-link pagination-link-current">1</a>
+          <a class="pagination-link pagination-link-current" href="#">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -208,17 +215,17 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-link" href="#">...</a>
+          <a class="pagination-link pagination-link-more" href="#">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
 
-      <section class="newsletter">
-        <div class="newsletter-header">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-description">Только полезная информация и никакого спама, честное бойскаутское!
+      <section class="newsletter newsletter-catalog">
+        <div class="newsletter-header newsletter-header-catalog">
+          <h2 class="newsletter-title newsletter-title-catalog">Подпишитесь на рассылку</h2>
+          <p class="newsletter-description newsletter-description-catalog">Только полезная информация и никакого спама, честное бойскаутское!
           </p>
         </div>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
