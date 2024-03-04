@@ -438,6 +438,8 @@ body {
   width: 452px;
   padding: 14px 20px;
   border-width: 0;
+  border-radius: 4px 0 0 4px;
+  background-color:#F2F2F2;
 }
 
 .newsletter-button {
