@@ -128,8 +128,10 @@
                   <a class="catalog-filter-title">Стоимость, ₽:</a>
                 </span>
                 <div class="price-field-container">
-                  <input class="field field-price field-price-min" type="number" id="price-min" name="price-min" value="0">
-                  <input class="field field-price field-price-max" type="number" id="price-max" name="price-max" value="9000">
+                  <input class="field field-price field-price-min" type="number" id="price-min" name="price-min"
+                    value="0">
+                  <input class="field field-price field-price-max" type="number" id="price-max" name="price-max"
+                    value="9000">
                 </div>
               </div>
               <div class="price-button-container">
@@ -139,22 +141,25 @@
             </form>
         </div>
 
-        <h2 class="hotel-counter">Найдено гостиниц: 38</h2>
-        <select class="select-control" aria-label="Сортировка">
-          <option value="cheap">Сначала дешевые</option>
-          <option value="expensive">Сначала дорогие</option>
-          <option value="popular">Сначала популярные</option>
-        </select>
-
-        <button class="button button-display-options button-cards" type="button">
-          <span class="visually-hidden">карточки</span>
-        </button>
-        <button class="button button-display-options button-slideshow" type="button">
-          <span class="visually-hidden">слайдшоу</span>
-        </button>
-        <button class="button button-display-options button-list" type="button">
-          <span class="visually-hidden">список</span>
-        </button>
+        <div class="hotel-counter-container page-wrapper">
+          <h2 class="hotel-counter">Найдено гостиниц: 38</h2>
+          <select class="select-control" aria-label="Сортировка">
+            <option value="cheap">Сначала дешевые</option>
+            <option value="expensive">Сначала дорогие</option>
+            <option value="popular">Сначала популярные</option>
+          </select>
+          <div class="button-display-options-container">
+            <button class="button button-display-options button-cards" type="button">
+              <span class="visually-hidden">карточки</span>
+            </button>
+            <button class="button button-display-options button-slideshow" type="button">
+              <span class="visually-hidden">слайдшоу</span>
+            </button>
+            <button class="button button-display-options button-list" type="button">
+              <span class="visually-hidden">список</span>
+            </button>
+          </div>
+        </div>
         </section>
 
         <ul class="hotel-list">
@@ -254,7 +259,7 @@
       </div>
     </main>
 
-    <footer class="page-footer">
+    <footer class="page-footer page-wrapper">
       <section class="footer-social">
         <h2 class="visually-hidden">Ссылки на соцсети</h2>
         <ul class="footer-social-list">
