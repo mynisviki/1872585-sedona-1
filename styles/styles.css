@@ -681,10 +681,12 @@ body {
 
 .hotel-list {
   list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
   padding: 0;
   gap: 20px;
+  grid-column: 1 / -1;
+  margin: 0 auto;
   margin-bottom: 40px;
 }
 
@@ -698,6 +700,7 @@ body {
 
 .hotel-card-image {
   margin-bottom: 20px;
+  object-fit: contain
 }
 
 .select-control {
