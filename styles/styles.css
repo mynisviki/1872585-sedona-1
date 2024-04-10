@@ -147,6 +147,25 @@ html {
 .button-header {
   padding: 8px 34px;
   border-radius: 4px;
+  line-height: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+
+.button-brown {
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+  background-color: #615048;
+  outline: none;
+}
+
+.button-brown:active {
+  color: #FFFFFF4D;
 }
 
 .main-container {
@@ -162,15 +181,6 @@ html {
   text-decoration: none;
   text-transform: uppercase;
   cursor: pointer;
-}
-
-.button-header {
-  background-color: #756157;
-  line-height: 20px;
-  font-weight: 700;
-  font-size: 16px;
-  text-align: center;
-  color: #FFFFFF;
 }
 
 /*index.html*/
@@ -384,8 +394,6 @@ html {
   font-weight: 700;
   font-size: 20px;
   text-align: center;
-  color: #FFFFFF;
-  background-color: #756157;
   border-radius: 4px;
   border: 0;
   padding: 8px 50px;
@@ -440,6 +448,16 @@ html {
   color: #FFFFFF;
 }
 
+.newsletter-button:hover,
+.newsletter-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.newsletter-button:active {
+  color: #FFFFFF4D;
+}
+
 .footer-contacts-phone {
   line-height: 40px;
   font-weight: 400;
@@ -447,6 +465,17 @@ html {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+
+.footer-contacts-phone:hover,
+.footer-contacts-phone:focus {
+  color: #756157;
+  outline: none;
+}
+
+.footer-contacts-phone:active {
+  color: #7561574D;
 }
 
 .services-list {
@@ -523,6 +552,14 @@ html {
   list-style-type: none;
 }
 
+.footer-button {
+  display: block;
+}
+
+.footer-button:focus {
+  outline: none;
+}
+
 .footer-social-icon {
   width: 48px;
   height: 40px;
@@ -536,12 +573,52 @@ html {
   background-image: url('../images/logo/social-logo-vk.svg');
 }
 
+.footer-button:hover .footer-social-icon-vk,
+.footer-button:focus .footer-social-icon-vk {
+  background-image: url('../images/logo/social-logo-vk-hover-focus.svg');
+}
+
+.footer-button:active .footer-social-icon-vk {
+  background-image: url('../images/logo/social-logo-vk-active.svg');
+}
+
 .footer-social-icon-telegram {
   background-image: url('../images/logo/social-logo-telegram.svg');
 }
 
+.footer-button:hover .footer-social-icon-telegram,
+.footer-button:focus .footer-social-icon-telegram {
+  background-image: url('../images/logo/social-logo-telegram-hover-focus.svg');
+}
+
+.footer-button:active .footer-social-icon-telegram {
+  background-image: url('../images/logo/social-logo-telegram-active.svg');
+}
+
 .footer-social-icon-youtube {
   background-image: url('../images/logo/social-logo-youtube.svg');
+}
+
+.footer-button:hover .footer-social-icon-youtube,
+.footer-button:focus .footer-social-icon-youtube {
+  background-image: url('../images/logo/social-logo-youtube-hover-focus.svg');
+}
+
+.footer-button:active .footer-social-icon-youtube {
+  background-image: url('../images/logo/social-logo-youtube-active.svg');
+}
+
+.footer-link-logo:focus {
+  outline: none;
+}
+
+.footer-link-logo:hover .footer-logo,
+.footer-link-logo:focus .footer-logo {
+  fill: #756157;
+}
+
+.footer-link-logo:active .footer-logo {
+  fill: #7561574D;
 }
 
 /*catalog.html*/
@@ -700,6 +777,20 @@ html {
   background: transparent;
 }
 
+.button-transparent:hover {
+  color: #FFFFFF;
+  opacity: 60%;
+}
+
+.button-transparent:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.button-transparent:active {
+  color: #FFFFFF4D;
+  outline: none;
+}
+
 .hotel-counter-container {
   display: flex;
   align-items: center;
@@ -768,8 +859,21 @@ html {
   height: 48px;
 }
 
+.button-display-options:focus {
+  border-color: #68A2CA;
+  outline: none;
+}
+
+.button-display-options:hover,
+.button-display-options:active {
+  border-color: #000000;
+}
+
 .button-cards {
   background-image: url("../images/icons/button-cards-icon.svg");
+}
+
+.button-cards-active {
   border-color: #000000;
 }
 
@@ -823,12 +927,38 @@ html {
 
 .green-button {
   background-color: #7DB54F;
+}
+
+.green-button:hover,
+.green-button:focus {
+  background-color: #6C9E42;
+  outline: none;
+}
+
+.green-button:active {
+  color: #FFFFFF4D;
+}
+
+.green-button-card {
   padding: 8px 18px;
+}
+
+.light-blue-button-card {
+  padding: 8px 20px;
 }
 
 .light-blue-button {
   background-color: #82B3D3;
-  padding: 8px 20px;
+}
+
+.light-blue-button:hover,
+.light-blue-button:focus {
+  background-color: #68A2CA;
+  outline: none;
+}
+
+.light-blue-button:active {
+  color: #FFFFFF4D;
 }
 
 .light-grey-button {
