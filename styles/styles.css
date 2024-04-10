@@ -43,7 +43,12 @@ html {
   margin: 0 auto;
 }
 
-body {
+.body {
+  background: #F2F2F2;
+  margin: 0;
+}
+
+.shadow-page-container {
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -53,6 +58,10 @@ body {
   line-height: 21px;
   color: #333333;
   background-color: #FFFFFF;
+}
+
+.shadow-page-container {
+  box-shadow: 0 0 15px 0 #00000033;
 }
 
 .navigation {
@@ -85,12 +94,19 @@ body {
 }
 
 .navigation-link {
+  padding-bottom: 17px;
+  position: relative;
+  z-index: 1;
   line-height: 24px;
   font-weight: 700;
   font-size: 20px;
   text-align: center;
   color: #333333;
   text-decoration: none;
+}
+
+.navigation-link-current {
+  border-bottom: 2px solid #756257;
 }
 
 .navigation-link-icon {
@@ -108,6 +124,24 @@ body {
 
 .navigation-link-icon-heart {
   background-image: url("../images/icons/heart-icon.svg");
+  text-decoration: none;
+}
+
+.navigation-link-icon-heart::before {
+  background-color: #7DB54F;
+  transform: translateY(-50%) translateX(50%);
+  display: flex;
+  height: 20px;
+  width: 20px;
+  content: "12";
+  border-radius: 50%;
+  font-family: PT Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  color: #FFFFFF;
+  align-items: center;
+  justify-content: center;
 }
 
 .button-header {
@@ -127,6 +161,7 @@ body {
 .button {
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .button-header {
@@ -142,9 +177,10 @@ body {
 
 .hero {
   display: flex;
-  background-image: url("../images/hero-background.jpg");
-  background-size: 100% auto;
-  background-repeat: no-repeat;
+  background-image: url("../images/divider.png"), url("../images/hero-background.jpg");
+  background-size: 100% auto, 100% auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, 0% 0%;
   padding-top: 51px;
   padding-bottom: 82px;
   margin-bottom: 69px;
