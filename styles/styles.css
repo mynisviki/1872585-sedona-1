@@ -554,15 +554,10 @@ html {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  width: 142px;
   list-style-type: none;
-}
-
-.footer-button {
-  display: block;
-}
-
-.footer-button:focus {
-  outline: none;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer-social-icon {
@@ -574,56 +569,38 @@ html {
   background-position: center;
 }
 
-.footer-social-icon-vk {
-  background-image: url('../images/logo/social-logo-vk.svg');
+.footer-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #83B3D3;
 }
 
-.footer-button:hover .footer-social-icon-vk,
-.footer-button:focus .footer-social-icon-vk {
-  background-image: url('../images/logo/social-logo-vk-hover-focus.svg');
+.footer-button:hover,
+.footer-button:focus {
+  color: #68A2CA;
+  outline: none;
 }
 
-.footer-button:active .footer-social-icon-vk {
-  background-image: url('../images/logo/social-logo-vk-active.svg');
-}
-
-.footer-social-icon-telegram {
-  background-image: url('../images/logo/social-logo-telegram.svg');
-}
-
-.footer-button:hover .footer-social-icon-telegram,
-.footer-button:focus .footer-social-icon-telegram {
-  background-image: url('../images/logo/social-logo-telegram-hover-focus.svg');
-}
-
-.footer-button:active .footer-social-icon-telegram {
-  background-image: url('../images/logo/social-logo-telegram-active.svg');
-}
-
-.footer-social-icon-youtube {
-  background-image: url('../images/logo/social-logo-youtube.svg');
-}
-
-.footer-button:hover .footer-social-icon-youtube,
-.footer-button:focus .footer-social-icon-youtube {
-  background-image: url('../images/logo/social-logo-youtube-hover-focus.svg');
-}
-
-.footer-button:active .footer-social-icon-youtube {
-  background-image: url('../images/logo/social-logo-youtube-active.svg');
+.footer-button:active {
+  color: #68A2CA4D;
 }
 
 .footer-link-logo:focus {
   outline: none;
 }
 
-.footer-link-logo:hover .footer-logo,
-.footer-link-logo:focus .footer-logo {
-  fill: #756157;
+.footer-link-logo {
+  color: #000000;
 }
 
-.footer-link-logo:active .footer-logo {
-  fill: #7561574D;
+.footer-link-logo:hover,
+.footer-link-logo:focus {
+  color: #756157;
+}
+
+.footer-link-logo:active {
+  color: #7561574D;
 }
 
 /*catalog.html*/
