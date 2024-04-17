@@ -702,11 +702,16 @@ html {
   width: 288px;
   margin-right: 70px;
   margin-left: 70px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border: none;
+  padding: 0;
 }
 
 .price-field-container {
   display: flex;
   gap: 2px;
+  margin-bottom: 36px;
 }
 
 .price-button-container {
@@ -715,15 +720,45 @@ html {
   padding-top: 56px;
 }
 
+.field-price-wrapper {
+  position: relative;
+}
+
+.field-price-label {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.3);
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .field-price {
   width: 143px;
   font-family: PT Sans;
   font-size: 18px;
   font-weight: 700;
+  padding-right: 44px;
   line-height: 24px;
   box-sizing: border-box;
+  border: 2px solid transparent;
 }
 
+.field-price:focus {
+  outline: 3px solid #83B3D3;
+  position: relative;
+  z-index: 1;
+}
+
+.field-price:active {
+  border-color: #000000;
+  outline: none;
+}
+
+.field-price::-webkit-inner-spin-button,
+.field-price::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
 
 .field-price-min {
   border-radius: 4px 0 0 4px;
@@ -731,6 +766,47 @@ html {
 
 .field-price-max {
   border-radius: 0 4px 4px 0;
+}
+
+.range-scale {
+  position: relative;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.range-toggle:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.range-toggle:active {
+  border: 2px solid #83B3D3;
+  outline: none;
+}
+
+.toggle-min {
+  top: -8px;
+}
+
+.toggle-max {
+  top: -8px;
+  right: -8px;
 }
 
 .control-input {

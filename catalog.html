@@ -120,17 +120,40 @@
                 </ul>
               </fieldset>
 
-              <div class="price-slider-container">
+              <fieldset class="price-slider-container">
                 <span class="price-slider">
                   <a class="catalog-filter-title">Стоимость, ₽:</a>
                 </span>
                 <div class="price-field-container">
-                  <input class="field field-price field-price-min" type="number" id="price-min" name="price-min"
-                    value="0">
-                  <input class="field field-price field-price-max" type="number" id="price-max" name="price-max"
-                    value="9000">
+                  <div class="field-price-wrapper">
+                    <label class="field-price-label" for="price-min">от</label>
+                    <input class="field field-price field-price-min" type="number" id="price-min" name="price-min"
+                      value="0">
+                  </div>
+                  <div class="field-price-wrapper">
+                    <label class="field-price-label" for="price-max">до</label>
+                    <input class="field field-price field-price-max" type="number" id="price-max" name="price-max"
+                      value="9000">
+                  </div>
                 </div>
-              </div>
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="right:68px; width:220px">
+                      <button type="button" class="range-toggle toggle-min"><span class="visually-hidden">Изменить
+                          минимальную цену.</span></button>
+                      <button type="button" class="range-toggle toggle-max"><span class="visually-hidden">Изменить
+                          максимальную цену.</span></button>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+
+
+              </fieldset>
               <div class="price-button-container">
                 <button class="button button-inner button-inner-submit light-blue-button"
                   type="submit">Применить</button>
