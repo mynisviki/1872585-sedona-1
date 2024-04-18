@@ -730,6 +730,7 @@ html {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  z-index: 2;
 }
 
 .field-price {
@@ -740,7 +741,6 @@ html {
   padding-right: 44px;
   line-height: 24px;
   box-sizing: border-box;
-  border: 2px solid transparent;
 }
 
 .field-price:focus {
@@ -750,7 +750,9 @@ html {
 }
 
 .field-price:active {
-  border-color: #000000;
+  -webkit-box-shadow:inset 0px 0px 0px 2px #000000;
+  -moz-box-shadow:inset 0px 0px 0px 2px #000000;
+  box-shadow:inset 0px 0px 0px 2px #000000;
   outline: none;
 }
 
