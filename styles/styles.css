@@ -999,7 +999,17 @@ html {
   outline: none;
 }
 
+.button-display-options:focus:not(:focus-visible) {
+  border-color: #E5E5E5;
+}
+
+.button-display-options:focus-visible {
+  border-color: #68A2CA;
+  outline: none;
+}
+
 .button-display-options:hover,
+.button-display-options:hover:not(:focus-visible),
 .button-display-options:active {
   border-color: #000000;
 }
