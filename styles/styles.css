@@ -950,13 +950,31 @@ html {
 .select-control {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
-  padding: 10px 18px;
+  padding: 10px 40px 10px 18px;
   margin-right: 70px;
   width: 292px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #333333;
   font-weight: 400;
+  appearance: none;
+  background-image: url("../images/icons/list-arrow-icon.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+}
+
+.select-control:hover,
+.select-control:focus {
+  border: 2px solid #68A2CA;
+  outline: none;
+}
+
+.select-control:active {
+  border: 2px solid #3F5E72;
+}
+
+.select-control:disabled{
+  border: 2px solid #0000004D;
 }
 
 .button-display-options-container {
