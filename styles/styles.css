@@ -679,6 +679,21 @@ html {
   margin-bottom: 16px;
 }
 
+.control-input[type="radio"] + .control-mark {
+  border-radius: 50%;
+}
+
+.control-input[type="radio"]:checked + .control-mark::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height: 10px;
+  background-color: #3F5E72;
+  border-radius: 50%;
+  content: "";
+}
+
 .catalog-filter-group {
   width: 151px;
   border: 0;
@@ -842,15 +857,18 @@ html {
 }
 
 
-.control-input[type="checkbox"]:focus + .control-mark {
+.control-input[type="checkbox"]:focus + .control-mark,
+.control-input[type="radio"]:focus + .control-mark {
   outline: 3px solid #83B3D3;
 }
 
-.control-input[type="checkbox"]:focus:not(:focus-visible) + .control-mark {
+.control-input[type="checkbox"]:focus:not(:focus-visible) + .control-mark,
+.control-input[type="radio"]:focus:not(:focus-visible) + .control-mark {
   outline: none;
 }
 
-.control-input[type="checkbox"]:focus-visible + .control-mark {
+.control-input[type="checkbox"]:focus-visible + .control-mark,
+.control-input[type="radio"]:focus-visible + .control-mark {
   outline: 3px solid #83B3D3;
 }
 
