@@ -730,7 +730,6 @@ html {
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 2;
 }
 
 .field-price {
@@ -744,16 +743,16 @@ html {
 }
 
 .field-price:focus {
-  outline: 3px solid #83B3D3;
-  position: relative;
-  z-index: 1;
+  box-shadow: 0 0 0 3px #83B3D3 inset;
+  outline: none;
 }
 
-.field-price:active {
-  -webkit-box-shadow:inset 0px 0px 0px 2px #000000;
-  -moz-box-shadow:inset 0px 0px 0px 2px #000000;
-  box-shadow:inset 0px 0px 0px 2px #000000;
-  outline: none;
+.field-price:focus:not(:focus-visible) {
+  box-shadow: none;
+}
+
+.field-price:focus-visible {
+  box-shadow: 0 0 0 3px #83B3D3 inset;
 }
 
 .field-price::-webkit-inner-spin-button,
@@ -791,15 +790,22 @@ html {
   cursor: pointer;
 }
 
-
 .range-toggle:focus {
   border: 3px solid #83B3D3;
   outline: none;
 }
 
-.range-toggle:active {
+.range-toggle:focus:not(:focus-visible) {
+  border: none;
+}
+
+.range-toggle:focus-visible {
+  border: 3px solid #83B3D3;
+}
+
+.range-toggle:active,
+.range-toggle:active:not(:focus-visible) {
   border: 2px solid #83B3D3;
-  outline: none;
 }
 
 .toggle-min {
