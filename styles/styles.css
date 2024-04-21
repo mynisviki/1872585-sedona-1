@@ -673,8 +673,39 @@ html {
   line-height: 24px;
 }
 
-.date-form-field {
+.date-form-field-wrapper {
   grid-column: 2 / -1;
+  position: relative;
+}
+
+.date-form-field {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.date-form-field-message {
+  position: absolute;
+  margin-top: 4px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.date-form-field-message-error {
+  color: #FF5757;
+}
+
+.calendar-icon {
+  display: block;
+  position: absolute;
+  background-image: url("../images/icons/calendar-icon.svg");
+  width: 16px;
+  height: 15px;
+  background-repeat: no-repeat;
+  opacity: 60%;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .button-submit {

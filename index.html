@@ -265,13 +265,23 @@
             </form> -->
 
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
               <label class="form-label сheck-in-date" for="сheck-in-date">Дата Заезда:</label>
-              <input class="date-form-field field field-search-form" type="text" id="сheck-in-date" name="check-in-date"
-                value="27 апреля 2020">
+              <div class="date-form-field-wrapper">
+                <input class="date-form-field field field-search-form" type="text" id="сheck-in-date"
+                  name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020" >
+                <span class="date-form-field-icon calendar-icon"></span>
+                <span class="date-form-field-message date-form-field-message-error">Мы не можем отправить вас в
+                  прошлое.</span>
+              </div>
 
               <label class="form-label сheck-out-date" for="сheck-out-date">Дата Выезда:</label>
-              <input class="date-form-field field field-search-form" type="text" id="сheck-out-date" name="check-out-date"
-                value="1 сентября 2023">
+              <div class="date-form-field-wrapper">
+              <input class="date-form-field field field-search-form" type="text" id="сheck-out-date"
+                name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
+                <span class="date-form-field-icon calendar-icon"></span>
+                <span class="date-form-field-message date-form-field-message-info">На эти даты есть свободные номера. Пока есть.</span>
+              </div>
 
               <label class="form-label search-form-adults" for="adults-input">Взрослые:</label>
               <input class="adults-input-field field field-search-form" type="number" value="2" name="adults-input">
