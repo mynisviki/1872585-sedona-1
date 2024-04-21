@@ -218,6 +218,75 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </footer>
+
+      <div class="modal-container">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <!-- <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="form-label сheck-in-date" for="сheck-in-date">Дата Заезда:</label>
+              <div class="date-form-input-wrapper">
+                <input class="date-form-field field" type="text" id="сheck-in-date" name="check-in-date"
+                  placeholder="27 апреля 2020">
+                <span class="calendar-icon"></span>
+                <p class="info-message сheck-in-date-error-message">Мы не можем отправить вас в прошлое.</p>
+              </div>
+              <label class="form-label сheck-out-date " for="сheck-out-date">Дата Выезда:</label>
+              <div class="date-form-input-wrapper">
+                <input class="date-form-field field" type="text" id="сheck-in-date" name="check-out-date"
+                  placeholder="1 сентября 2023">
+                <span class="calendar-icon"></span>
+                <p class="info-message сheck-in-date-info-message">На эти даты есть свободные номера. Пока есть.</p>
+              </div>
+              <div class="field-group-container field-group-container-adults">
+                <label class="form-label search-form-adults counter" for="adults-input">Взрослые</label>
+                <button class="button button-counter button-counter-minus">-</button>
+                <input class="adults-input-field field" type="number" name="adults-input">
+                <button class="button button-counter button-counter-plus">+</button>
+              </div>
+              <div class="field-group-container field-group-container-children">
+                <label class="form-label search-form-children counter" for="children-input">Дети</label>
+                <div class="popover popover-cart">
+                  <div class="popover-content">
+                    <a class="popover-info">
+                      <span class="popover-info-icon"></span>
+                    </a>
+                  </div>
+                </div>
+                <button class="button button-counter button-counter-minus">-</button>
+                <input class="adults-input-field field" type="number" name="adults-input">
+                <button class="button button-counter button-counter-plus">+</button>
+              </div>
+              <button type="submit" class="button light-blue-button">Найти</button>
+            </form> -->
+
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+              <label class="form-label сheck-in-date" for="сheck-in-date">Дата Заезда:</label>
+              <input class="date-form-field field field-search-form" type="text" id="сheck-in-date" name="check-in-date"
+                value="27 апреля 2020">
+
+              <label class="form-label сheck-out-date" for="сheck-out-date">Дата Выезда:</label>
+              <input class="date-form-field field field-search-form" type="text" id="сheck-out-date" name="check-out-date"
+                value="1 сентября 2023">
+
+              <label class="form-label search-form-adults" for="adults-input">Взрослые:</label>
+              <input class="adults-input-field field field-search-form" type="number" value="2" name="adults-input">
+
+              <label class="form-label search-form-children" for="children-input">Дети:</label>
+              <input class="adults-input-field field field-search-form" type="number" value="2" name="adults-input">
+
+              <button type="submit" class="button button-submit light-blue-button">Найти</button>
+            </form>
+
+
+          </section>
+        </div>
+      </div>
+
     </div>
   </body>
 
