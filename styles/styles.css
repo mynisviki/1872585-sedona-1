@@ -675,13 +675,16 @@ html {
 
 .date-form-field-wrapper {
   grid-column: 2 / -1;
-  position: relative;
 }
 
 .date-form-field {
   display: block;
   width: 100%;
   box-sizing: border-box;
+  padding-right: 40px;
+  background-image: url("../images/icons/calendar-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center right 20px;
 }
 
 .date-form-field-message {
@@ -695,18 +698,50 @@ html {
   color: #FF5757;
 }
 
-.calendar-icon {
+.field-search-form-counter-wrapper {
+  position: relative;
+  width: 110px;
+}
+
+.field-search-form-counter-wrapper-children {
+  justify-self: end;
+}
+
+.field-search-form-counter {
   display: block;
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.field-search-form-counter::-webkit-inner-spin-button,
+.field-search-form-counter::-webkit-outer-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+.button-counter {
+  display: flex;
   position: absolute;
-  background-image: url("../images/icons/calendar-icon.svg");
-  width: 16px;
-  height: 15px;
-  background-repeat: no-repeat;
-  opacity: 60%;
-  right: 20px;
   top: 50%;
   transform: translateY(-50%);
+  border: none;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  color: #7561574D;
+  justify-content: center;
+  align-items: center;
 }
+
+.button-counter-minus {
+  left: 10px;
+}
+
+.button-counter-plus {
+  right: 10px;
+}
+
 
 .button-submit {
   grid-column: 1 / -1;
