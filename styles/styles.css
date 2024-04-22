@@ -642,6 +642,27 @@ html {
   cursor: pointer;
 }
 
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+}
+
+.modal-close-button:focus {
+  border: 3px solid #83B3D3;
+  outline: none;
+}
+
+.modal-close-button:focus:not(:focus-visible) {
+  border: none;
+}
+
+.modal-close-button:focus-visible {
+  border: 3px solid #83B3D3;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
@@ -673,6 +694,19 @@ html {
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
+  padding: 12px 20px;
+}
+
+.field-search-form:hover {
+  background-color: #E6E6E6;
+}
+
+.field-search-form:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.field-search-form:focus:not(:placeholder-shown) {
+  outline: 2px solid #000000;
 }
 
 .date-form-field-wrapper {
@@ -727,13 +761,41 @@ html {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  border: none;
   padding: 0;
   width: 20px;
   height: 20px;
   color: #7561574D;
   justify-content: center;
   align-items: center;
+  border: 3px solid transparent;
+  box-sizing: content-box;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.button-counter:focus {
+  color: #000000;
+  border-color: #82B3D3;
+  outline: none;
+}
+
+.button-counter:focus:not(:focus-visible) {
+  border-color: transparent;
+  color: #7561574D;
+}
+
+.button-counter:focus-visible {
+  color: #000000;
+  border-color: #82B3D3;
+}
+
+.button-counter:hover,
+.button-counter:hover:not(:focus-visible) {
+  color: #000000;
+}
+
+.button-counter:active {
+  opacity: 0.2;
 }
 
 .button-counter-minus {
@@ -1071,7 +1133,7 @@ html {
 
 .button-transparent:hover {
   color: #FFFFFF;
-  opacity: 60%;
+  opacity: 0.6;
 }
 
 .button-transparent:focus {
