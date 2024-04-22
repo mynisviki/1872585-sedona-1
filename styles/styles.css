@@ -676,7 +676,7 @@ html {
 
 .search-form {
   display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto minmax(0, 1fr);
+  grid-template-columns: auto minmax(0, 1fr) auto auto;
   gap: 48px 18px;
   align-items: baseline;
 }
@@ -749,6 +749,26 @@ html {
   box-sizing: border-box;
   text-align: center;
 }
+
+.search-form-children-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-right: 28px;
+}
+
+.search-form-children-button-info {
+  background-color: #83B3D3;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  border: none;
+  background-image: url("../images/icons/info-icon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
 
 .field-search-form-counter::-webkit-inner-spin-button,
 .field-search-form-counter::-webkit-outer-spin-button {
@@ -1333,10 +1353,22 @@ html {
   background-color: #82B3D3;
 }
 
-.light-blue-button:hover,
 .light-blue-button:focus {
   background-color: #68A2CA;
   outline: none;
+}
+
+.light-blue-button:focus:not(:focus-visible) {
+  background-color: #82B3D3;
+}
+
+.light-blue-button:focus-visible {
+  background-color: #68A2CA;
+}
+
+.light-blue-button:hover:not(:focus-visible),
+.light-blue-button:hover {
+  background-color: #68A2CA;
 }
 
 .light-blue-button:active {
