@@ -218,6 +218,86 @@
           <span class="visually-hidden">HTML Academy</span>
         </a>
       </footer>
+
+      <div class="modal-container modal-container-hidden">
+        <div class="modal modal-search">
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+          <section class="modal-content">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+
+            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+
+              <label class="form-label сheck-in-date" for="сheck-in-date">Дата Заезда:</label>
+              <div class="date-form-field-wrapper">
+                <input class="date-form-field field field-search-form" type="text" id="сheck-in-date"
+                  name="check-in-date" placeholder="Укажите дату" value="27 апреля 2020">
+                <span class="date-form-field-message date-form-field-message-error">Мы не можем отправить вас в
+                  прошлое.</span>
+              </div>
+
+              <label class="form-label сheck-out-date" for="сheck-out-date">Дата Выезда:</label>
+              <div class="date-form-field-wrapper">
+                <input class="date-form-field field field-search-form" type="text" id="сheck-out-date"
+                  name="check-out-date" placeholder="Укажите дату" value="1 сентября 2023">
+                <span class="date-form-field-message date-form-field-message-info">На эти даты есть свободные номера.
+                  Пока есть.</span>
+              </div>
+
+              <label class="form-label search-form-adults" for="adults-input">Взрослые:</label>
+              <div class="field-search-form-counter-wrapper">
+                <button type="button" class="button button-counter button-counter-minus">
+                  <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </button>
+                <input class="field field-search-form field-search-form-counter adults-input-field" id="adults-input"
+                  type="number" value="2" name="adults-input">
+                <button type="button" class="button button-counter button-counter-plus">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
+              </div>
+
+
+              <div class="search-form-children-wrapper">
+                <label class="form-label search-form-children" for="children-input">Дети:</label>
+                <button type="button" class="button light-blue-button search-form-children-button-info">
+                  <span class="visually-hidden">Справочная информация о количестве детей</span>
+                  <div class="popover popover-children-info">
+                    <div class="popover-content">
+                      <span class="popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до
+                        18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                    </div>
+                  </div>
+                </button>
+              </div>
+
+              <div class="field-search-form-counter-wrapper field-search-form-counter-wrapper-children">
+                <button type="button" class="button button-counter button-counter-minus">
+                  <svg width="14" height="2" viewBox="0 0 14 2" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </button>
+                <input class="field field-search-form field-search-form-counter children-input-field"
+                  id="children-input" type="number" value="2" name="adults-input">
+                <button type="button" class="button button-counter button-counter-plus">
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" />
+                  </svg>
+                </button>
+              </div>
+              <button type="submit" class="button button-submit light-blue-button">Найти</button>
+            </form>
+
+          </section>
+        </div>
+      </div>
+
     </div>
   </body>
 
