@@ -604,7 +604,7 @@ html {
 }
 
 .modal-container {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
@@ -613,8 +613,8 @@ html {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-shown {
-  display: flex;
+.modal-container-hidden {
+  display: none;
 }
 
 .modal {
