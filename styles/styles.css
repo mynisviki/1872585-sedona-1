@@ -761,6 +761,12 @@ html {
   margin-right: 28px;
 }
 
+.search-form-children-button-info-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
 .search-form-children-button-info {
   position: relative;
   background-color: #83B3D3;
@@ -882,13 +888,9 @@ html {
   transform: translateX(-50%);
   width: 256px;
   min-height: 56px;
-  text-transform: none;
-  text-align: left;
-  cursor: auto;
-  user-select: text;
 }
 
-.search-form-children-button-info:hover .popover-children-info {
+.search-form-children-button-info:hover + .popover-children-info {
   display: block;
 }
 
