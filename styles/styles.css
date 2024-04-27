@@ -1263,7 +1263,7 @@ html {
 }
 
 .hotel-card {
-  width: 340px;
+  width: 342px;
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   padding: 20px;
@@ -1271,8 +1271,13 @@ html {
 }
 
 .hotel-card-image {
-  margin-bottom: 20px;
-  object-fit: contain
+  margin-bottom: 16px;
+  object-fit: contain;
+}
+
+.stars-container {
+  display: flex;
+  gap: 6px;
 }
 
 .select-control {
@@ -1361,7 +1366,7 @@ html {
 .hotel-card-title {
   line-height: 28px;
   font-weight: 700;
-  font-size: 28px;
+  font-size: 24px;
   margin: 0;
   margin-bottom: 16px;
 }
