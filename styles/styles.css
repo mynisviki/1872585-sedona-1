@@ -217,7 +217,7 @@ html {
 .advantages-header {
   margin: 0 auto;
   width: 652px;
-  margin-bottom: 69px;
+  margin-bottom: 90px;
 }
 
 .advantages-list {
@@ -279,6 +279,7 @@ html {
   text-transform: uppercase;
   margin: 0 auto;
   margin-bottom: 30px;
+  width: 175px;
 }
 
 .advantages-list-splitter {
