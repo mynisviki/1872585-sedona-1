@@ -249,6 +249,11 @@ html {
   font-family: "PT Sans", sans-serif;
 }
 
+.button:disabled {
+  cursor: default;
+  opacity: 0.7;
+}
+
 /*index.html*/
 
 .hero {
@@ -593,6 +598,10 @@ html {
 
 .field-newsletter {
   width: 452px;
+}
+
+.field-newsletter:disabled {
+  opacity: 0.7;
 }
 
 .newsletter-button {
@@ -1123,6 +1132,10 @@ html {
   box-sizing: border-box;
 }
 
+.field:disabled {
+  opacity: 0.7;
+}
+
 .field-price:focus {
   box-shadow: 0 0 0 3px #83B3D3 inset;
   outline: none;
@@ -1224,7 +1237,6 @@ html {
   background: #FFFFFF;
 }
 
-
 .control-input[type="checkbox"]:focus + .control-mark,
 .control-input[type="radio"]:focus + .control-mark {
   outline: 3px solid #83B3D3;
@@ -1258,6 +1270,11 @@ html {
   line-height: 23px;
   font-weight: 400;
   font-size: 18px;
+}
+
+.control-input:disabled + .control-mark,
+.control-input:disabled + .control-mark + .control-label {
+  opacity: 0.6;
 }
 
 .button-inner {
