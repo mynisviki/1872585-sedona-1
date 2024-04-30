@@ -803,6 +803,8 @@ html {
   margin-top: 4px;
   margin-left: 20px;
   margin-right: 20px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .date-form-field-message-error {
