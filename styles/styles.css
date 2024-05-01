@@ -18,6 +18,9 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: contain;
+}
+
+.image {
   display: block;
 }
 
@@ -199,7 +202,7 @@ html {
   width: 20px;
   content: "12";
   border-radius: 50%;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   font-weight: 400;
   line-height: 10px;
@@ -586,7 +589,7 @@ html {
 }
 
 .field {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 24px;
@@ -741,7 +744,7 @@ html {
 .modal-title {
   margin: 0;
   margin-bottom: 64px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -757,7 +760,7 @@ html {
 }
 
 .form-label {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -765,7 +768,7 @@ html {
 
 .field-search-form {
   border-radius: 4px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
@@ -916,7 +919,7 @@ html {
   padding: 18px 50px;
   border-radius: 10px;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   color: #FFFFFF;
   font-size: 20px;
   font-weight: 700;
@@ -930,7 +933,7 @@ html {
   z-index: 1;
   box-sizing: border-box;
   padding: 22px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   line-height: 20px;
   font-size: 16px;
@@ -1126,7 +1129,7 @@ html {
 
 .field-price {
   width: 143px;
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-weight: 700;
   padding: 12px 20px;
@@ -1280,7 +1283,7 @@ html {
 }
 
 .button-inner {
-  font-family: PT Sans;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
