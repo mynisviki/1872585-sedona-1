@@ -276,7 +276,7 @@ html {
 
 .advantages-header {
   margin: 0 auto;
-  width: 652px;
+  width: 655px;
   margin-bottom: 90px;
 }
 
@@ -856,14 +856,6 @@ html {
   cursor: pointer;
 }
 
-
-.field-search-form-counter::-webkit-inner-spin-button,
-.field-search-form-counter::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
 .button-counter {
   display: flex;
   position: absolute;
@@ -1154,13 +1146,6 @@ html {
   box-shadow: 0 0 0 3px #83B3D3 inset;
 }
 
-.field-price::-webkit-inner-spin-button,
-.field-price::-webkit-outer-spin-button {
-  -webkit-appearance: none;
-  appearance: none;
-  margin: 0;
-}
-
 .field-price-min {
   border-radius: 4px 0 0 4px;
 }
@@ -1373,6 +1358,7 @@ html {
   -webkit-appearance: none;
   appearance: none;
   background-image: url("../images/icons/list-arrow-icon.svg");
+  background-color: #FFFFFF;
   background-repeat: no-repeat;
   background-position: right 17px center;
 }
