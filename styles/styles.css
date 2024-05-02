@@ -71,7 +71,6 @@ html {
 
 .navigation {
   display: flex;
-  flex-wrap: wrap;
   gap: 14px;
   width: 1060px;
   margin: 0 auto;
@@ -95,6 +94,7 @@ html {
   margin: 0;
   padding: 20px 0;
   list-style-type: none;
+  gap: 45px 0;
 }
 
 .navigation-user {
@@ -554,6 +554,7 @@ html {
 
 .services-list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
   margin-bottom: 96px;
@@ -1303,8 +1304,10 @@ html {
 
 .hotel-counter-container {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
+  gap: 20px 0;
 }
 
 .hotel-counter {
@@ -1351,6 +1354,7 @@ html {
   padding: 12px 40px 12px 18px;
   margin-right: 70px;
   width: 292px;
+  flex-shrink: 0;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   color: #333333;
@@ -1576,7 +1580,7 @@ html {
   min-height: 60px;
   border-radius: 4px;
   text-align: center;
-  padding: 12px 0;
+  padding: 12px;
   box-sizing: border-box;
 }
 
