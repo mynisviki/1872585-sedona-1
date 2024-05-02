@@ -400,7 +400,7 @@ html {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 400px;
+  max-width: 400px;
   align-items: center;
   padding: 81px 85px;
 }
