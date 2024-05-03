@@ -410,6 +410,27 @@ html {
   max-width: 400px;
   align-items: center;
   padding: 81px 85px;
+
+  background-size: 75px auto;
+  background-repeat: no-repeat;
+  background-position: center 81px;
+  margin-bottom: 30px;
+}
+
+.services-list-item-house {
+  background-image: url("../images/icons/house-icon.svg");
+  background-size: 76px 72px;
+}
+
+.services-list-item-food {
+  background-image: url("../images/icons/food-icon.svg");
+  background-position: center 82px;
+}
+
+.services-list-item-gift {
+  background-image: url("../images/icons/gift-icon.svg");
+  background-size: 65px 76px;
+  background-position: center 79px;
 }
 
 .services-list-item-light-blue {
@@ -417,8 +438,7 @@ html {
 }
 
 .services-list-item-header {
-  margin: 0 auto;
-  margin-bottom: 30px;
+  margin: 103px auto 29px;
   line-height: 28px;
   font-weight: 700;
   font-size: 24px;
@@ -566,30 +586,8 @@ html {
   flex-wrap: wrap;
   list-style-type: none;
   margin: 0 auto;
-  margin-bottom: 96px;
+  margin-bottom: 66px;
   padding: 0;
-}
-
-.services-list-icon {
-  display: inline-block;
-  width: 75px;
-  height: 72px;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  margin-bottom: 30px;
-}
-
-.services-list-icon-house {
-  background-image: url("../images/icons/house-icon.svg");
-}
-
-.services-list-icon-food {
-  background-image: url("../images/icons/food-icon.svg");
-}
-
-.services-list-icon-gift {
-  background-image: url("../images/icons/gift-icon.svg");
 }
 
 .newsletter-form {
