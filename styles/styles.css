@@ -581,15 +581,15 @@ html {
 }
 
 .services-list-icon-house {
-  background-image: url('../images/icons/house-icon.svg');
+  background-image: url("../images/icons/house-icon.svg");
 }
 
 .services-list-icon-food {
-  background-image: url('../images/icons/food-icon.svg');
+  background-image: url("../images/icons/food-icon.svg");
 }
 
 .services-list-icon-gift {
-  background-image: url('../images/icons/gift-icon.svg');
+  background-image: url("../images/icons/gift-icon.svg");
 }
 
 .newsletter-form {
@@ -1028,7 +1028,7 @@ html {
 }
 
 .breadcrumbs-icon-home {
-  background-image: url('../images/icons/breadcrumbs-home-icon.svg');
+  background-image: url("../images/icons/breadcrumbs-home-icon.svg");
   background-size: auto 13px;
 }
 
@@ -1037,7 +1037,7 @@ html {
   height: 10px;
   display: inline-block;
   background-size: 10px auto;
-  background-image: url('../images/icons/breadcrumbs-right-arrow-icon.svg');
+  background-image: url("../images/icons/breadcrumbs-right-arrow-icon.svg");
 }
 
 .catalog-filter {
@@ -1263,7 +1263,7 @@ html {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark::after {
-  background-image: url('../images/icons/checked-mark-icon.svg');
+  background-image: url("../images/icons/checked-mark-icon.svg");
 }
 
 .control-input {
