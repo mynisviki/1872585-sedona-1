@@ -1032,11 +1032,13 @@ html {
   background-size: auto 13px;
 }
 
-.breadcrumbs-icon-right-arrow {
+.breadcrumbs-item:not(:first-child):before {
+  content: "";
   width: 7px;
+  margin-right: 10px;
   height: 10px;
   display: inline-block;
-  background-size: 10px auto;
+  background-size: 100%;
   background-image: url("../images/icons/breadcrumbs-right-arrow-icon.svg");
 }
 
