@@ -1354,8 +1354,30 @@ html {
 }
 
 .stars-container {
-  display: flex;
-  gap: 6px;
+  height: 17px;
+  background-repeat: space no-repeat;
+  background-position: center;
+  background-image: url("../images/icons/star-icon.svg");
+}
+
+.stars-container-five-stars {
+  width: 107px;
+}
+
+.stars-container-four-stars {
+  width: 89px;
+}
+
+.stars-container-three-stars {
+  width: 65px;
+}
+
+.stars-container-two-stars {
+  width: 41px;
+}
+
+.stars-container-one-stars {
+  width: 18px;
 }
 
 .select-control {
@@ -1553,16 +1575,6 @@ html {
   align-items: center;
   justify-content: space-between;
   gap: 20px;
-}
-
-.star-icon {
-  display: inline-block;
-  width: 18px;
-  height: 17px;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("../images/icons/star-icon.svg");
 }
 
 .separator {
