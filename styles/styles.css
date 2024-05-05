@@ -261,7 +261,7 @@ html {
 
 .hero {
   display: flex;
-  background-image: url("../images/divider.png"), url("../images/hero-background.jpg");
+  background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, 0% 0%;
