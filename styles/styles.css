@@ -262,6 +262,7 @@ html {
 .hero {
   display: flex;
   background-image: url("../images/divider.svg"), url("../images/hero-background.jpg");
+  background-color: #335971;
   background-size: 100% auto, 100% auto;
   background-repeat: no-repeat, no-repeat;
   background-position: bottom, 0% 0%;
@@ -513,7 +514,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #82b3d3;
+  background-color: #335971;
   padding-top: 96px;
   padding-bottom: 104px;
 }
@@ -982,7 +983,7 @@ html {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #82b3d3;
+  background-color: #335971;
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
