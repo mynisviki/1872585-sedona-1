@@ -641,6 +641,7 @@ html {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  gap: 3px;
   width: 142px;
   list-style-type: none;
   justify-content: space-around;
@@ -1591,6 +1592,7 @@ html {
 .pagination {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   gap: 8px;
   padding: 0;
