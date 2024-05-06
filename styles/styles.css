@@ -102,7 +102,7 @@ html {
 .navigation-user {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 256px;
+  max-width: 256px;
   flex-shrink: 0;
   gap: 24px;
   margin-left: auto;
@@ -1318,7 +1318,6 @@ html {
 
 .hotel-counter-container {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 39px;
   gap: 20px 0;
@@ -1420,6 +1419,8 @@ html {
 
 .button-display-options-container {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 160px;
   gap: 8px;
 }
 
